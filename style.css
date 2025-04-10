@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Bungee+Tint&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 1rem ;
+    
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+.title{
+    background-color: #DDFFF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+
+}
+
+.temp{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#temp-show{
+    font-size: 5rem;
+}
+
+#show-btn{
+    padding: 0.3rem;
+    margin-top: 1rem;
+}
+
+.msg{
+    text-align: center;
+    margin-top: 1rem ;
+    font-weight: bold;
+}
+
+.hudai{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1rem ;
+    font-family: "Bungee Tint", sans-serif;
+}
+
+input{
+    padding: 0.3rem;
+}
+
+/* Media query for devices with a max width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust container width */
+        border-radius: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Reduce font size for headings */
+        padding: 0.5rem;
+    }
+
+    #temp-show {
+        font-size: 3rem; /* Adjust temperature font size */
+    }
+
+    #show-btn {
+        padding: 0.2rem;
+        font-size: 0.9rem; /* Adjust button font size */
+    }
+
+    .msg {
+        font-size: 0.9rem; /* Adjust message font size */
+    }
+}
+
+/* Media query for devices with a max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Full width for smaller screens */
+        border-radius: 0.3rem;
+    }
+
+    h2 {
+        font-size: 1rem; /* Further reduce font size */
+    }
+
+    #temp-show {
+        font-size: 2.5rem; /* Adjust temperature font size */
+    }
+
+    #show-btn {
+        padding: 0.2rem;
+        font-size: 0.8rem; /* Smaller button font size */
+    }
+
+    .msg {
+        font-size: 0.8rem; /* Smaller message font size */
+    }
+}
